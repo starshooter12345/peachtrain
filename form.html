@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+    </head>
+    <body>
+        <form>
+            <table align="center" width="500">
+                <caption>Registration form</caption>
+                <tr>
+                    <td>User name</td>
+                    <td>
+                        <input type="text" name="txtname" placeholder="max 10 chars only" autofocus required maxlength="10" size="20" pattern="[A-Z]">
+
+                     </td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="txtpassword" placeholder="password should be 4 to 15 chars" required pattern="[a-z A-Z 0-9]">
+                        
+                     </td>
+                </tr>
+
+                <tr>
+                    <td>Age</td>
+                    <td>
+                        <input type="number" name="txtage" min="15" max="30" value="2">
+                        
+                     </td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="txtemail" >
+                        
+                     </td>
+                </tr>
+
+                <tr>
+                    <td>Favorite color</td>
+                    <td>
+                        <input type="color" name="txtcolor" >
+                        
+                     </td>
+                </tr>
+
+                <tr>
+                    <td>Favorite cricketer name</td>
+                    <td>
+                        <input type="text" list="players" >
+                        <datalist id="players">
+                            <option>sachin</option>
+                            <option>dhoni</option>
+                            <option>dravid</option>
+                            <option>saurav</option>
+                        </datalist>
+                        
+                     </td>
+                </tr>
+
+                <tr>
+                    <td>Price range</td>
+                    <td>
+                       <input type="range" name="txtprice">
+                        
+                     </td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>
