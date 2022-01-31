@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            function bodyload(){
+                var x=document.getElementsByName("pay");
+                alert("total no. of payment methods: "+x.length);
 
+            }
+            </script>
     </head>
-    <body>
+    <body onload="bodyload()">
         <div>
             <fieldset>
                 <legend>
                     Payment methods
                 </legend>
                 <input type="radio" name="pay">COD<br>
+                <input type="radio" name="pay">credit card
                 
             </fieldset>
         </div>
